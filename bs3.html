@@ -1,35 +1,52 @@
-<!DOCTYPE html>
-  <html>
-	 <head>
-		<style>
-			h1{text-align: center;font-size: 50pt;}
+<!doctype html>
+<html lang="en">
+  <head>
+  
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+	<style> body {background-color:#000;} .heading{color:#000; padding-bottom: 50px; padding-left: 60px;padding-top: 30px; text-align: center; font-family: verdana; font-size: 30pt; text-decoration: oblique; font-weight: bold; text-decoration:underline overline;} .since{font-weight:30;}h1{text-align: center;font-size: 50pt;} #size{padding-bottom: 30px;} #crust{padding-bottom: 30px;} #meats{padding-bottom: 30px;} #veg{padding-bottom: 30px;} .header{height:500px; width: 68%; margin: 0 auto; padding-bottom: 60px; padding-bottom: 70px;}
 			p{font-size: 20pt; margin-left: 30px;}
 			input[type="radio"] {margin-left: 30px;}
-			input[type="checkbox"] {margin-left: 30px; margin-top: 20px;}
-			body{background-color: yellow;}
+			input[type="checkbox"] {margin-left: 30px; margin-top: 20px;} .pad { margin-top:90px; }
+			
 			.float{display: inline-block;}
 			.prices{font-size: 15pt;}
 			button:hover{color:#000;font-weight:bold;border:2px solid#000;}
+			
 			#btnOrder {font-weight: bold; font-size:20pt; margin-left: 30px;}
 			h5 {
 				font-size: 12pt; margin-left: 30px;
 			}
 			#cart {margin-left: 30px;
-			}
+			} .container{ background-color: #FFFFCC; padding-top: 90px; border: 2px dashed #ff0000;} .question{text-align: center; margin-top:-30px;} .options {padding-left: 50px; margin-bottom: 20px;}
+		.header { padding-bottom: 100px; margin-top:60px; margin-bottom:50px;} 
+}</style>
+    
+  </head>
 
-	   </style>
-    </head>
+  <body>
+  	
+  
+  <!-- Content here -->
+
+  	<div class="header">
+  		<img src="./images/fredspizza3.png" alt="" style="width:100%;height:90%;">
+  		<br>
+
+  	<div class="container pad">
 
 
-<body>
-
-<h1>The Pizza Place</h1><br><br>
-<form id="frmMenu"
-
-<div class="size section">
-	<p>What size pizza would you like?</p> 
-
-	<h5><i>Personal $6, Medium $10, Large $14, Xtra Large $16</i></h5>
+  		<p class="question"><i><strong>What size pizza would you like?</strong><i></p> 
+<section id="size"
+	<h5 class="options"><i>Personal $6, Medium $10, Large $14, Xtra Large $16</i></h5>
+		<br>
 		<br>
 
 			<input class="Size" type="radio" name="size"  value="Personal Pizza">Personal</input>&nbsp&nbsp
@@ -37,18 +54,20 @@
 			<input class="Size" type="radio" name="size" value="Large Pizza">Large</input
 			>&nbsp&nbsp
 			<input class="Size" type="radio" name="size" value="Extra Large Pizza">Extra Large</input>
+			<img src="border.png" alt="" style="width:105%;height:105%;">
 
-			<br><br><br><br>
 
+  <!-- Content here -->
 </div>
 
+			<br><br><br><br>
+  	<div class="container meat">
 
-
-<div class="meat section">
-	<p>Choose Meats</p>
+<p class="question"><i><strong>Choose Meats</strong></i></p>
+<section id="meats"
 	<h5><i>One free meat, $1 per additional</i></h5>
 
-		
+		<br>
 			<input class="Meat" type="checkbox" name="meat" value="Pepperoni">Pepperoni</input><br>
 			<input class="Meat" type="checkbox" name="meat" value="Sausage">Sausage</input><br>
 			<input class="Meat" type="checkbox" name="meat" value="Canadian Bacon">Canadian Bacon</input><br>
@@ -56,14 +75,17 @@
 			<input class="Meat" type="checkbox" name="meat" value="Anchovy">Anchovy</input><br>
 			<input class="Meat" type="checkbox" name="meat" value="Chicken">Chicken</input><br>
 
-</div>
 
+  		</div>
+  		<br><br><br>
 
+  		 	<div class="container">
 
-<div class="veggie section">
-		<p>Add Veggies:</p>
+  		 				<p class="question"><i><strong>Add Veggies:</strong></i></p>
+  		 				<section id="veg"
 		<h5><i>One free veggie, $1 per additional</i></h5>
-
+		<br>
+			
 			<input class="Veggie" type="checkbox" name="veggie" value="Tomatoes">Tomatoes<br>
 			<input class="Veggie"  type="checkbox" name="veggie" value="Onions">Onions<br>
 			<input class="Veggie" type="checkbox" name="veggie" value="Olives" checked>Olives<br>
@@ -72,14 +94,18 @@
 			<input class="Veggie" type="checkbox" name="veggie" value="Pineapple">Pineapple<br>
 			<input class="Veggie" type="checkbox" name="veggie" value="Spinach">Spinach<br>
 			<input class="Veggie" type="checkbox" name="veggie" value="Jalapeno">Jalapeno<br>
+		
+		</div>
 
-</div>
+		<br><br><br>
 
-
-<div class="crust section">
-	<p>Crust</p>
+  		 	<div class="container">
+  		 		
+  		 		<p class="question"><i><strong>Choose a Crust</strong></i></p>
+  		 		<section id="crust">
         
 		<h5><i>$3 charge for Cheese Stuffed Crust</i></h5>
+		<br>
 
 			<input class="Crust" type="radio" name="crust" value="Plain Crust">Plain Crust</input>&nbsp&nbsp
 			<input class="Crust" type="radio" name="crust"value="Garlic Butter Crust">Garlic Butter Crust</input>&nbsp&nbsp
@@ -89,38 +115,48 @@
 			<input class="Crust" type="radio" name="crust" value="House Special Crust">House Special Crust</input>
 
 </div>
+<br>
+<br>
+<br>
+  		 	<div class="container">
 
-
-<div class="sauce section">
-	<p>Choose a sauce:</p>
+	<p class="question"><i><strong>Choose a sauce:</strong></i></p>
+	<br>
 
 			<input type="radio" class="Sauce" name="sauce" value="Marinara">Marinara</input>&nbsp&nbsp
 			<input type="radio" class="Sauce"  name="sauce"value="White">White</input>&nbsp&nbsp
 			<input type="radio" class="Sauce"  name="sauce" value="Barbecue">Barbecue</input
 			>&nbsp&nbsp
 			<input type="radio" class="Sauce"  name="sauce" value="No Sauce">No Sauce</input>
+			<br>
+			<br>
 	
 </div>
+<br>
+<br>
+<br>
+<div class="container">
 
-<br><br>
-
-<div class="cheese section">
-
-	<p>Customize Cheese:</p>
+	<p class="question"><i><strong>Customize Cheese:</strong></i></p>
 	<h5><i>$3 charge for Extra Cheese</i></h5>
 
 			<input type="radio" class="Cheese" name="cheese" value="Regular">Regular</input>&nbsp&nbsp
 			<input type="radio" class="Cheese" name="cheese" value="No Cheese">No Cheese</input
 			>&nbsp&nbsp
 			<input type="radio" class="Cheese" name="cheese" value="Extra Cheese">Extra Cheese</input>
+			<br>
+			<br>
 
 </div>
+<br>
 
 <br><br>
 
 
-		<input id="btnOrder" type="button" onclick="Receipt()" 
-				value="Place Order"><br>
+		<input id="btnOrder" class="submitbutton" type="button" onclick="Receipt()" 
+				value="Place Order">
+				<br>
+				<br>
 
 
 <div id="cart">
@@ -138,6 +174,7 @@ function Receipt() {
 	// function to function, growing line by line into a full receipt
 	
 	var text1 = "<h3>Your Cart:</h3>";
+
 	var runningTotal = 0;
 	var sizeTotal = 0;
 	var sizeArray = document.getElementsByClassName("Size");
@@ -342,10 +379,22 @@ for (var i = 0; i < cheeseArray.length; i++) {
     document.getElementById("showText").innerHTML=text1;
 	
 	document.getElementById("totalPrice").innerHTML = "<h3>Total: <strong>$"+runningTotal+".00"+"</strong></h3>";
+
+	document.getElementById("showText").style.color = "#ff0000";
+	document.getElementById("totalPrice").style.color = "#ff0000";
 };
-    
+   
     //END CRUST
 
 	</script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
   </body>
 </html>
